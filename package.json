@@ -1,0 +1,31 @@
+{
+  "name": "yaml-expr",
+  "displayName": "yaml-expr",
+  "description": "Syntax Highlight for yaml expressions",
+  "version": "0.0.1",
+  "author": {
+    "name": "Adrian Gutierrez"
+  },
+  "publisher": "agutierrezgit",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "js-expr.injection",
+        "injectTo": [
+          "source.yaml",
+          "source.yml"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.js": "javascript"
+        },
+        "path": "./syntaxes/injection.json"
+      }
+    ]
+  }
+}

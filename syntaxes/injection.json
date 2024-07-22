@@ -1,0 +1,24 @@
+{
+  "scopeName": "js-expr.injection",
+  "injectionSelector": "L:source.yaml",
+  "patterns": [
+    {
+      "include": "#js-expr"
+    }
+  ],
+  "repository": {
+    "js-expr": {
+      "patterns": [
+        {
+          "begin": "(?<=!expr\\s*>-\\s*)",
+          "end": "(?=^\\S|\\Z)",
+          "patterns": [
+            {
+              "include": "source.js"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
